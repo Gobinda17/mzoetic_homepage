@@ -1,44 +1,39 @@
 <template>
     <header class="bg-slate-50 text-slate-500">
-        <div class="grid grid-cols-1 sm:grid-cols-6 border-b">
-            <div class="sm:col-span-5 border-e">
+        <div class="grid grid-cols-1 sm:grid-cols-8 border-b">
+            <div class="sm:col-span-6 border-e">
                 <div class="px-[20px] py-[20px]">
                     <div class="flex items-center justify-between ps-[20px]">
                         <div class="flex items-center gap-6 text-lg">
-                            <p class="font-custom font-medium">
+                            <p class="font-custom font-medium text-xl">
                                 <i class="ri-phone-fill px-[5px]"></i>
                                 <span>+91 8855667799</span>
                             </p>
-                            <p class="font-custom font-medium">
+                            <p class="font-custom font-medium text-xl">
                                 <i class="ri-mail-line px-[5px]"></i>
                                 <span>contactus@mzeotic.com</span>
                             </p>
                         </div>
-                        <div class="flex items-center justify-evenly gap-4 text-xl">
+                        <div class="flex items-center justify-evenly gap-4">
                             <a href="#" class="hover:text-facebook">
-                                <i class="ri-facebook-circle-fill"></i>
+                                <i class="ri-facebook-circle-fill text-4xl"></i>
                             </a>
-                            <a href="#" class="hover:text-insta">
+                            <a href="#" class="hover:text-insta text-4xl">
                                 <i class="ri-instagram-line"></i>
                             </a>
-                            <a href="#" class="hover:text-twitter">
+                            <a href="#" class="hover:text-twitter text-3xl">
                                 <i class="ri-twitter-x-fill"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="sm:col-span-1">
+            <div class="sm:col-span-2">
                 <div class="container px-[20px] py-[20px]">
-                    <div class="flex items-center justify-between text-lg">
-                        <a href="#">
-                            <i class="ri-lock-line px-[5px]"></i>
-                            <span>Login</span>
-                        </a>
-                        <a href="#">
-                            <i class="ri-user-4-fill px-[5px]"></i>
-                            <span>Sign Up</span>
-                        </a>
+                    <div class="flex items-center justify-between gap-4">
+                        <button class="bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-2 rounded-md text-slate-50 hover:bg-gradient-to-l w-full">Login/Create Account</button>
+                        <span class="text-xl">Or</span>
+                        <button class="bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-2 rounded-md text-slate-50 hover:bg-gradient-to-l w-full">Login for Provider</button>
                     </div>
                 </div>
             </div>
