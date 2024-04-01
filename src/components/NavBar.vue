@@ -1,6 +1,6 @@
 <template>
-    <header class="bg-slate-50 text-slate-500">
-        <div class="grid grid-cols-1 sm:grid-cols-8 border-b">
+    <header class=" text-slate-500 w-full">
+        <div class="bg-slate-50 grid grid-cols-1 sm:grid-cols-8 border-b">
             <div class="sm:col-span-6 border-e">
                 <div class="px-[20px] py-[20px]">
                     <div class="flex items-center justify-between ps-[20px]">
@@ -31,9 +31,13 @@
             <div class="sm:col-span-2">
                 <div class="container px-[20px] py-[20px]">
                     <div class="flex items-center justify-between gap-4">
-                        <button class="bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-2 rounded-md text-slate-50 hover:bg-gradient-to-l w-full">Login/Create Account</button>
+                        <button
+                            class="bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-2 rounded-md text-slate-50 hover:bg-gradient-to-l w-full transition">Login/Create
+                            Account</button>
                         <span class="text-xl">Or</span>
-                        <button class="bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-2 rounded-md text-slate-50 hover:bg-gradient-to-l w-full">Login for Provider</button>
+                        <button
+                            class="bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-2 rounded-md text-slate-50 hover:bg-gradient-to-l w-full transition">Login
+                            for Provider</button>
                     </div>
                 </div>
             </div>
@@ -79,20 +83,21 @@
                                 <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                                     <div class="hidden sm:ml-6 sm:block">
                                         <div class="flex space-x-4">
-                                            <a href="#" class="text-slate-700 hover:border-b hover:border-slate-900 px-3 py-2 text-xl font-medium"
+                                            <a href="#"
+                                                class="text-slate-900 hover:border-b hover:border-slate-900 px-3 py-2 text-xl font-medium"
                                                 aria-current="page">
                                                 Home
                                             </a>
                                             <a href="#"
-                                                class="text-slate-700 hover:border-b hover:border-slate-900 px-3 py-2 text-xl font-medium">
+                                                class="text-slate-900 hover:border-b hover:border-slate-900 px-3 py-2 text-xl font-medium">
                                                 Team
                                             </a>
                                             <a href="#"
-                                                class="text-slate-700 hover:border-b hover:border-slate-900 px-3 py-2 text-xl font-medium">
+                                                class="text-slate-900 hover:border-b hover:border-slate-900 px-3 py-2 text-xl font-medium">
                                                 Projects
                                             </a>
                                             <a href="#"
-                                                class="text-slate-700 hover:border-b hover:border-slate-900 px-3 py-2 text-xl font-medium">
+                                                class="text-slate-900 hover:border-b hover:border-slate-900 px-3 py-2 text-xl font-medium">
                                                 Calendar
                                             </a>
                                             <a href="#" class="bg-"></a>
@@ -136,6 +141,7 @@
 
 <script>
 import logoImg from "../assets/images/logo.png"
+// import logoImg from "../assets/images/logo-white.png"
 export default {
     name: "Navbar",
     data() {

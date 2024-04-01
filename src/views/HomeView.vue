@@ -2,27 +2,116 @@
   <div>
     <navBar></navBar>
   </div>
-  <section class="hero-wrapper">
-    <div class="flex items-center justify-center py-[165px] text-slate-50 flex-col gap-4">
+
+  <section class="hero-wrapper bg-cover">
+    <div class="flex items-center justify-center py-[200px] text-slate-50 flex-col gap-4 bg-slate-950/50">
       <h1 class="text-8xl">Find Next Place To Visit</h1>
       <span class="text-2xl text-slate-50">Discover amzaing places at exclusive deals</span>
+
       <div class="search-wrapper">
-        <div class="relative mt-2 rounded-md shadow-sm">
-          <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-            <span class="text-gray-500 sm:text-sm">$</span>
+        <div class="grid grid-cols-1 sm:grid-cols-12 gap-4">
+          <div class="sm:col-span-3">
+            <div class="relative h-full shadow-sm">
+              <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                <i class="ri-search-line text-gray-500 sm:text-sm text-lg"></i>
+              </div>
+              <input type="text" name="searh" id="search"
+                class="block w-full border-0 py-[20px] pl-8 pr-7 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                placeholder="Keywords">
+            </div>
           </div>
-          <input type="text" name="price" id="price"
-            class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-            placeholder="0.00">
-          <div class="absolute inset-y-0 right-0 flex items-center">
-            <label for="currency" class="sr-only">Currency</label>
-            <select id="currency" name="currency"
-              class="h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
-              <option>USD</option>
-              <option>CAD</option>
-              <option>EUR</option>
-            </select>
+          <div class="sm:col-span-3">
+            <div class="h-full shadow-sm">
+              <select id="destination" name="destination"
+                class="h-full block w-full border-0 py-[20px] pl-8 pr-7 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
+                <option selected disabled>Destinations</option>
+                <option>Destination-1</option>
+                <option>Destination-2</option>
+                <option>Destination-3</option>
+              </select>
+            </div>
           </div>
+          <div class="sm:col-span-3">
+            <div class="h-full shadow-sm">
+              <select id="durations" name="durations"
+                class="h-full block w-full border-0 py-[20px] pl-8 pr-7 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
+                <option selected disabled>Durations</option>
+                <option>Durations-1</option>
+                <option>Durations-2</option>
+                <option>Durations-3</option>
+              </select>
+            </div>
+          </div>
+          <div class="sm:col-span-3">
+            <div class="h-full shadow-sm">
+              <button
+                class="bg-slate-950 text-slate-50 h-full w-full hover:bg-transparent hover:border-slate-950 hover:border-2 transition">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="deals-of-day-wrapper absolute w-full top-[78%]">
+    <div class="md:container mx-auto">
+      <div class="grid grid-cols-1">
+        <div class="bg-sky-400 p-[15px]">
+          <h1 class="text-2xl text-slate-900 bg-slate-50 absolute top-[-15%] px-4 py-2 rounded-xl shadow-xl">Deals of
+            the Day</h1>
+          <div class="sm:col-span-1 py-[15px] px-[20px]">
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-5">
+              <div class="sm:col-span-4">
+                <div class="flex items-center gap-4">
+                  <p class="text-slate-50 text-8xl">
+                    <i class="ri-globe-fill"></i>
+                  </p>
+                  <div class="flex flex-col text-slate-50 gap-2">
+                    <h1 class="text-xl">Deals on Destinations</h1>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eligendi,
+                      officiis excepturi dolorem at vero neque accusantium id dolore in consectetur ducimus, quae
+                      reprehenderit odio distinctio itaque? Earum, cum odio.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sm:col-span-4">
+                <div class="flex items-center gap-4">
+                  <p class="text-slate-50 text-8xl">
+                    <i class="ri-money-dollar-circle-line"></i>
+                  </p>
+                  <div class="flex flex-col text-slate-50 gap-2">
+                    <h1 class="text-xl">Deals on Prices</h1>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eligendi,
+                      officiis excepturi dolorem at vero neque accusantium id dolore in consectetur ducimus, quae
+                      reprehenderit odio distinctio itaque? Earum, cum odio.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sm:col-span-4">
+                <div class="flex items-center gap-4">
+                  <p class="text-slate-50 text-8xl">
+                    <i class="ri-building-line"></i>
+                  </p>
+                  <div class="flex flex-col text-slate-50 gap-2">
+                    <h1 class="text-xl">Deals on Hotels</h1>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eligendi,
+                      officiis excepturi dolorem at vero neque accusantium id dolore in consectetur ducimus, quae
+                      reprehenderit odio distinctio itaque? Earum, cum odio.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-wrapper pt-[200px]">
+    <div class="md:container mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-12 gap-6">
+        <div class="sm:col-span-1">
+          <h1 class="text-6xl">Stays</h1>
         </div>
       </div>
     </div>
