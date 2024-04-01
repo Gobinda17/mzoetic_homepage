@@ -107,11 +107,24 @@
     </div>
   </section>
 
-  <section class="main-wrapper pt-[200px]">
+  <section class="main-wrapper mt-[250px]">
     <div class="md:container mx-auto">
-      <div class="grid grid-cols-1 sm:grid-cols-12 gap-6">
+      <div class="grid grid-cols-1 gap-6">
         <div class="sm:col-span-1">
           <h1 class="text-6xl">Stays</h1>
+        </div>
+        <div class="sm:col-span-1">
+          <div class="bg-sky-400/25 text-slate-900 p-[15px] shadow-md h-full w-full">
+            <ul class="border-b border-slate-800 flex items-center justify-start w-full gap-6">
+              <li>
+                <a href="#" class="hover:text-blue-800 hover:font-bold hover:border-b border-blue-800 transition-all">
+                  Camp-Sites
+                </a>
+              </li>
+              <li>Hotels</li>
+              <li>Homestays</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
