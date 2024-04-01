@@ -9,7 +9,7 @@
       <span class="text-2xl text-slate-50">Discover amzaing places at exclusive deals</span>
 
       <div class="search-wrapper">
-        <div class="grid grid-cols-1 sm:grid-cols-12 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-12 gap-2">
           <div class="sm:col-span-3">
             <div class="relative h-full shadow-sm">
               <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
