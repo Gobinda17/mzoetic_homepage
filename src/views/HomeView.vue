@@ -115,15 +115,39 @@
         </div>
         <div class="sm:col-span-1">
           <div class="bg-sky-400/25 text-slate-900 p-[15px] shadow-md h-full w-full">
-            <ul class="border-b border-slate-800 flex items-center justify-start w-full gap-6">
-              <li>
-                <a href="#" class="hover:text-blue-800 hover:font-bold hover:border-b border-blue-800 transition-all">
-                  Camp-Sites
-                </a>
-              </li>
-              <li>Hotels</li>
-              <li>Homestays</li>
-            </ul>
+            <div class="flex items-center justify-between">
+              <ul class="flex items-center justify-start w-full gap-1">
+                <li>
+                  <button
+                    class="text-slate-900 bg-slate-50 shadow-md transition-all py-[15px] px-[50px] rounded-md hover:border-b-2 hover:border-blue-500"
+                    @click="changeTabs('camp')"
+                    :class="defaultTab === 'camp' ? 'active:border-b-2 active:border-blue-500':''">
+                    Camp-Sites
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="text-slate-900 bg-slate-50 shadow-md transition-all py-[15px] px-[50px] rounded-md hover:border-b-2 hover:border-blue-500">
+                    Hotels
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="text-slate-900 bg-slate-50 shadow-md transition-all py-[15px] px-[50px] rounded-md hover:border-b-2 hover:border-blue-500">
+                    Homestays
+                  </button>
+                </li>
+              </ul>
+              <ul class="flex items-center justify-end w-full gap-1">
+                <li>
+                  <button
+                    class="text-slate-900 hover:text-slate-50 bg-slate-50 shadow-md transition ease-in-out duration-300 py-[15px] px-[50px] rounded-md hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500">
+                    <i class="ri-map-pin-line"></i>
+                    Nearby Top-Rated
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -140,7 +164,13 @@ export default {
   },
   data() {
     return {
+      defaultTab: "camp",
     };
+  },
+  methods: {
+    changeTabs(event) {
+      this.defaultTab = event;
+    },
   }
 }
 </script>
