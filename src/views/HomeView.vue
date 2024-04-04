@@ -119,21 +119,25 @@
               <ul class="flex items-center justify-start w-full gap-1">
                 <li>
                   <button
-                    class="text-slate-900 bg-slate-50 shadow-md transition-all py-[15px] px-[50px] rounded-md hover:border-b-2 hover:border-blue-500"
+                    class="text-slate-900 bg-slate-50 shadow-md transition-all py-[15px] px-[50px] rounded-md hover:border-b-2 hover:border-blue-500 "
                     @click="changeTabs('camp')"
-                    :class="defaultTab === 'camp' ? 'active:border-b-2 active:border-blue-500' : ''">
+                    :class="defaultTab === 'camp' ? 'active [&.active]:border-b-2 [&.active]:border-blue-500' : ''">
                     Camp-Sites
                   </button>
                 </li>
                 <li>
                   <button
-                    class="text-slate-900 bg-slate-50 shadow-md transition-all py-[15px] px-[50px] rounded-md hover:border-b-2 hover:border-blue-500">
+                    class="text-slate-900 bg-slate-50 shadow-md transition-all py-[15px] px-[50px] rounded-md hover:border-b-2 hover:border-blue-500"
+                    @click="changeTabs('hotels')"
+                    :class="defaultTab === 'hotels' ? 'active [&.active]:border-b-2 [&.active]:border-blue-500' : ''">
                     Hotels
                   </button>
                 </li>
                 <li>
                   <button
-                    class="text-slate-900 bg-slate-50 shadow-md transition-all py-[15px] px-[50px] rounded-md hover:border-b-2 hover:border-blue-500">
+                    class="text-slate-900 bg-slate-50 shadow-md transition-all py-[15px] px-[50px] rounded-md hover:border-b-2 hover:border-blue-500"
+                    @click="changeTabs('homestays')"
+                    :class="defaultTab === 'homestays' ? 'active [&.active]:border-b-2 [&.active]:border-blue-500' : ''">
                     Homestays
                   </button>
                 </li>
@@ -151,7 +155,8 @@
 
             <!-- Cards Carousel -->
             <div class="flex items-center gap-5 justify-evenly">
-              <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4">
+              <div
+                class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4">
                 <a href="#">
                   <img class="p-8 rounded-t-lg" src="../assets/images/hotels.jpg" alt="product image" />
                 </a>
@@ -200,7 +205,8 @@
                 </div>
               </div>
 
-              <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4">
+              <div
+                class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4">
                 <a href="#">
                   <img class="p-8 rounded-t-lg" src="../assets/images/hotels.jpg" alt="product image" />
                 </a>
@@ -271,6 +277,7 @@ export default {
   methods: {
     changeTabs(event) {
       this.defaultTab = event;
+      console.log(this.defaultTab);
     },
   }
 }
