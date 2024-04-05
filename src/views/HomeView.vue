@@ -154,8 +154,8 @@
             </div>
 
             <!-- Cards Carousel -->
-            <div class="flex items-center relative">
-              <button class="bg-slate-200/50 text-slate-950 w-[50px] h-[50px] absolute left-[-2%] text-3xl rounded-full hover:bg-slate-200 transition-colors shadow-lg" @click="changeSlide('from-right')" data-direction="from-right">
+            <div class="flex items-center relative" v-show="defaultTab === 'camp'">
+              <button class="bg-slate-200/50 text-slate-950 w-[50px] h-[50px] absolute left-[-2%] text-3xl rounded-full hover:bg-slate-200 transition-colors shadow-lg" @click="changeSlide('from-right')">
                 <i class="ri-arrow-left-line"></i>
               </button>
               <div class="flex items-center gap-5 justify-evenly w-full">
@@ -347,8 +347,15 @@
                     </div>
                   </div>
                 </div>
+                <div class="w-full max-w-sm bg-transparent mt-4 carousel-cards">
+                  <div class="px-5 py-5">
+                    <button class="text-slate-900 hover:text-slate-50 bg-slate-50 shadow-md transition ease-in-out duration-300 py-[15px] px-[50px] rounded-md hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500">
+                      See More
+                    </button>
+                  </div>
+                </div>
               </div>
-              <button class="bg-slate-200/50 text-slate-950 w-[50px] h-[50px] absolute left-[99%] text-3xl rounded-full hover:bg-slate-200 transition-colors shadow-lg" @click="changeSlide('from-left')" data-direction="from-left">
+              <button class="bg-slate-200/50 text-slate-950 w-[50px] h-[50px] absolute left-[99%] text-3xl rounded-full hover:bg-slate-200 transition-colors shadow-lg" @click="changeSlide('from-left')">
                 <i class="ri-arrow-right-line"></i>
               </button>
             </div>
@@ -389,13 +396,12 @@ export default {
       }
     },
     changeSlide(event) {
-      if(event === 'from-right' && this.carouselCards[this.changeSliderIndexRight] !== 'undefined') {
+      if(event === 'from-right' && this.carouselCards[this.changeSliderIndexRight]) {
         this.carouselCards[this.changeSliderIndexLeft].style['display'] = 'none';
         this.carouselCards[this.changeSliderIndexRight].style['display'] = 'block';
         this.changeSliderIndexLeft++;
         this.changeSliderIndexRight++;
-      } else if(event === 'from-left'){
-        console.log(this.changeSliderIndexLeft, this.changeSliderIndexRight)
+      } else if(event === 'from-left' && this.carouselCards[this.changeSliderIndexLeft]){
         this.changeSliderIndexLeft--;
         this.changeSliderIndexRight--;
         this.carouselCards[this.changeSliderIndexLeft].style['display'] = 'block';
