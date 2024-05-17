@@ -4,6 +4,7 @@ import router from './router'
 
 import 'remixicon/fonts/remixicon.css'
 import './assets/main.css'
+import './assets/style.css'
 
 const app = createApp(App)
 

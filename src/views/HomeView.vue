@@ -155,11 +155,14 @@
 
             <!-- Cards Carousel -->
             <div class="flex items-center relative" v-show="defaultTab === 'camp'">
-              <button class="bg-slate-200/50 text-slate-950 w-[50px] h-[50px] absolute left-[-2%] text-3xl rounded-full hover:bg-slate-200 transition-colors shadow-lg" @click="changeSlide('from-right')">
+              <button
+                class="bg-slate-200/50 text-slate-950 w-[50px] h-[50px] absolute left-[-2%] text-3xl rounded-full hover:bg-slate-200 transition-colors shadow-lg"
+                @click="changeSlide('from-right')">
                 <i class="ri-arrow-left-line"></i>
               </button>
               <div class="flex items-center gap-5 justify-evenly w-full">
-                <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 carousel-cards">
+                <div
+                  class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 carousel-cards">
                   <a href="#">
                     <img class="p-8 rounded-t-lg" src="../assets/images/hotels.jpg" alt="product image" />
                   </a>
@@ -206,7 +209,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 carousel-cards">
+                <div
+                  class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 carousel-cards">
                   <a href="#">
                     <img class="p-8 rounded-t-lg" src="../assets/images/hotels.jpg" alt="product image" />
                   </a>
@@ -253,7 +257,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 carousel-cards">
+                <div
+                  class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 carousel-cards">
                   <a href="#">
                     <img class="p-8 rounded-t-lg" src="../assets/images/hotels.jpg" alt="product image" />
                   </a>
@@ -300,7 +305,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 carousel-cards">
+                <div
+                  class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-4 carousel-cards">
                   <a href="#">
                     <img class="p-8 rounded-t-lg" src="../assets/images/hotels.jpg" alt="product image" />
                   </a>
@@ -349,13 +355,16 @@
                 </div>
                 <div class="w-full max-w-sm bg-transparent mt-4 carousel-cards">
                   <div class="px-5 py-5">
-                    <button class="text-slate-900 hover:text-slate-50 bg-slate-50 shadow-md transition ease-in-out duration-300 py-[15px] px-[50px] rounded-md hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500">
+                    <button
+                      class="text-slate-900 hover:text-slate-50 bg-slate-50 shadow-md transition ease-in-out duration-300 py-[15px] px-[50px] rounded-md hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500">
                       See More
                     </button>
                   </div>
                 </div>
               </div>
-              <button class="bg-slate-200/50 text-slate-950 w-[50px] h-[50px] absolute left-[99%] text-3xl rounded-full hover:bg-slate-200 transition-colors shadow-lg" @click="changeSlide('from-left')">
+              <button
+                class="bg-slate-200/50 text-slate-950 w-[50px] h-[50px] absolute left-[99%] text-3xl rounded-full hover:bg-slate-200 transition-colors shadow-lg"
+                @click="changeSlide('from-left')">
                 <i class="ri-arrow-right-line"></i>
               </button>
             </div>
@@ -364,6 +373,96 @@
       </div>
     </div>
   </section>
+
+  <section class="main-wrapper mt-[250px] mb-[250px]">
+    <div class="relative flex items-center gap-6">
+      <div class="event-items relative w-full">
+        <!-- <div class="events-mask">
+        </div> -->
+        <img src="../assets/images/events.png" alt="Events" />
+        <img class="w-[39%] absolute top-[-32px] left-[1%] z-[-1]" src="../assets/images/event-bg.svg" alt="Event BG" />
+      </div>
+
+      <!-- <div class="event-items relative w-full">
+        <div class="events-mask">
+          <img class="h-[650px] object-cover" src="../assets/images/events.png" alt="Events" />
+        </div>
+        <img class="w-[39%] absolute top-[-32px] left-[1%] z-[-1]" src="../assets/images/event-bg.svg" alt="Event BG" />
+      </div>
+
+      <div class="event-items relative w-full">
+        <div class="events-mask">
+          <img class="h-[650px] object-cover" src="../assets/images/events.png" alt="Events" />
+        </div>
+        <img class="w-[39%] absolute top-[-32px] left-[1%] z-[-1]" src="../assets/images/event-bg.svg" alt="Event BG" />
+      </div>
+
+      <div class="event-items relative w-full">
+        <div class="events-mask">
+          <img class="h-[650px] object-cover" src="../assets/images/events.png" alt="Events" />
+        </div>
+        <img class="w-[39%] absolute top-[-32px] left-[1%] z-[-1]" src="../assets/images/event-bg.svg" alt="Event BG" />
+      </div>
+
+      <div class="event-items relative w-full">
+        <div class="events-mask">
+          <img class="h-[650px] object-cover" src="../assets/images/events.png" alt="Events" />
+        </div>
+        <img class="w-[39%] absolute top-[-32px] left-[1%] z-[-1]" src="../assets/images/event-bg.svg" alt="Event BG" />
+      </div> -->
+    </div>
+
+    <!-- <div class="grid grid-cols-12 gap-6">
+      <div class="sm:col-span-2">
+        <div class="relative flex items-center">
+          <div class="event-items relative w-full">
+            <div class="events-mask">
+              <img class="h-[650px] object-cover" src="../assets/images/events.png" alt="Events" />
+            </div>
+            <img class="w-[39%] absolute top-[-32px] left-[1%] z-[-1]" src="../assets/images/event-bg.svg"
+              alt="Event BG" />
+          </div>
+        </div>
+      </div>
+
+      <div class="sm:col-span-2">
+        <div class="relative flex items-center">
+          <div class="event-items relative w-full">
+            <div class="events-mask">
+              <img class="h-[650px] object-cover" src="../assets/images/events.png" alt="Events" />
+            </div>
+            <img class="w-[39%] absolute top-[-32px] left-[1%] z-[-1]" src="../assets/images/event-bg.svg"
+              alt="Event BG" />
+          </div>
+        </div>
+      </div>
+
+      <div class="sm:col-span-2">
+        <div class="relative flex items-center">
+          <div class="event-items relative w-full">
+            <div class="events-mask">
+              <img class="h-[650px] object-cover" src="../assets/images/events.png" alt="Events" />
+            </div>
+            <img class="w-[39%] absolute top-[-32px] left-[1%] z-[-1]" src="../assets/images/event-bg.svg"
+              alt="Event BG" />
+          </div>
+        </div>
+      </div>
+
+      <div class="sm:col-span-2">
+        <div class="relative flex items-center">
+          <div class="event-items relative w-full">
+            <div class="events-mask">
+              <img class="h-[650px] object-cover" src="../assets/images/events.png" alt="Events" />
+            </div>
+            <img class="w-[39%] absolute top-[-32px] left-[1%] z-[-1]" src="../assets/images/event-bg.svg"
+              alt="Event BG" />
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
 </template>
 
 <script>
@@ -389,19 +488,19 @@ export default {
     carouselSliders() {
       this.carouselCardsCount = document.getElementsByClassName("carousel-cards").length;
       this.carouselCards = document.getElementsByClassName("carousel-cards");
-      for(let i = 0; i < this.carouselCardsCount; i++) {
-        if(i >= 3) {
+      for (let i = 0; i < this.carouselCardsCount; i++) {
+        if (i >= 3) {
           this.carouselCards[i].style['display'] = 'none';
         }
       }
     },
     changeSlide(event) {
-      if(event === 'from-right' && this.carouselCards[this.changeSliderIndexRight]) {
+      if (event === 'from-right' && this.carouselCards[this.changeSliderIndexRight]) {
         this.carouselCards[this.changeSliderIndexLeft].style['display'] = 'none';
         this.carouselCards[this.changeSliderIndexRight].style['display'] = 'block';
         this.changeSliderIndexLeft++;
         this.changeSliderIndexRight++;
-      } else if(event === 'from-left' && this.carouselCards[this.changeSliderIndexLeft]){
+      } else if (event === 'from-left' && this.carouselCards[this.changeSliderIndexLeft]) {
         this.changeSliderIndexLeft--;
         this.changeSliderIndexRight--;
         this.carouselCards[this.changeSliderIndexLeft].style['display'] = 'block';

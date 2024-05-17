@@ -3,3 +3,16 @@
 @tailwind utilities;
 /* 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap') */
+
+.gradient-text {
+    background: -webkit-linear-gradient(#a3e635, #65a30d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.events-mask {
+    -webkit-mask-image: url('../assets/images/icons/frame3.png');
+    mask-image: url('../assets/images/icons/frame3.png');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
