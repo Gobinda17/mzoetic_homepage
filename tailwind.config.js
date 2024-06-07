@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        custom: ['Roboto Serif', 'serif'],
+        custom: ['Roboto', 'sans-serif'],
       },
       colors: {
         facebook: "#1877f2",
